@@ -1,0 +1,13 @@
+# Node
+node_modules/
+
+# Tauri build output
+/dist/
+/apk_dist/
+/src-tauri/target/
+/src-tauri/gen/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

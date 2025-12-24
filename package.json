@@ -1,0 +1,20 @@
+{
+  "name": "tauri-mobile-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Boilerplate mínimo de Hello World para apps móveis com Tauri.",
+  "scripts": {
+    "prepare:dist": "node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});['index.html','styles.css','script.js'].forEach(f=>fs.copyFileSync(f,`dist/${f}`));\"",
+    "tauri": "tauri",
+    "dev": "npm run prepare:dist && tauri dev",
+    "build": "npm run prepare:dist && tauri build",
+    "android:dev": "npm run prepare:dist && tauri android dev",
+    "android:build": "npm run prepare:dist && tauri android build"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.9.6"
+  },
+  "dependencies": {}
+}
